@@ -1,3 +1,4 @@
+/*#region SITE SETINGS*/
 :root {
     --main-font: 'Roboto', 'Raleway', 'Sans-serif';
     --main-color: #212121;
@@ -27,7 +28,7 @@ body {
 }
 
 .conteiner {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -62,12 +63,13 @@ img {
     display: block;
 }
 
-/*=====================
-    HEADER-NAV-index.html
-=====================*/
+/*#endregion SITE SETINGS*/
+
+/*#region HEADER SECTION*/
 .header-section {
     border-bottom: 1px solid #ECECEC;
 }
+
 
 .logo {
     color: var(--selectoin-color);
@@ -155,10 +157,9 @@ img {
     text-decoration: none;
 }
 
+/*#endregion HEADER*/
 
-/*=====================
-    HERO SECTION
-=====================*/
+/*#region HERO SECTION*/
 .hero-section {
     background-color: #2F303A;
     text-align: center;
@@ -202,9 +203,13 @@ img {
     background-color: var(--button-color-hover-focus);
 }
 
-/*=====================
-    SPECIFICS SECTION
-=====================*/
+/*#endregion HERO SECTION*/
+
+/*#region SPECIFICS SECTION*/
+.specifics-section {
+    padding-bottom: 0;
+}
+
 .specifics-list {
     display: flex;
 }
@@ -233,10 +238,9 @@ img {
     letter-spacing: 0.03em;
 }
 
-/*=====================
-    DEVELOPMENT SECTION
-=====================*/
+/*#endregion SPECIFICS SECTION*/
 
+/*#region DEVELOPMENT SECTION*/
 .devefelopment-title {
     font-weight: 700;
     font-size: 36px;
@@ -260,10 +264,9 @@ img {
     margin-right: 0;
 }
 
+/*#endregion DEVELOPMENT SECTION*/
 
-/*=====================
-    TEAM
-=====================*/
+/*#region TEAM SECTION*/
 .team-section {
     background-color: #F5F4FA;
 }
@@ -317,11 +320,9 @@ img {
     padding-bottom: 30px;
 }
 
+/*#endregion TEAM*/
 
-
-/*=====================
-    FOOTER SITE
-=====================*/
+/*#region FOOTER SITE SECTION*/
 .footer-site {
     background-color: #2F303A;
 }
@@ -338,9 +339,9 @@ img {
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
     color: #FFFFFF;
 }
+
 
 .footer-item {
     line-height: 1.71;
@@ -356,12 +357,27 @@ img {
 
 .footer-site {
     padding-top: 60px;
+    padding-bottom: 60px;
+
 }
 
+.footer {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
 
-/*=====================
-    FILTR-portfolio.html
-=====================*/
+.addres-text {
+    padding-bottom: 9px;
+}
+
+.footer-link:nth-last-child(n+1) {
+    margin-bottom: 9px;
+}
+
+/*#endregion FOOTER SITE*/
+
+/*#region FILTR-portfolio.html SECTION*/
 .filter-button {
     font-family: inherit;
     font-weight: 500;
@@ -406,6 +422,19 @@ img {
     flex-wrap: wrap;
 }
 
+.project-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.project-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.project-item:nth-child(n + 7) {
+    margin-bottom: 0;
+}
+
 
 .name-project {
     font-weight: 700;
@@ -421,3 +450,18 @@ img {
     letter-spacing: 0.03em;
     color: #757575;
 }
+
+.name-card {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #eeeeee;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #eeeeee;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #eeeeee;
+    padding: 20px 24px;
+}
+
+/*#endregion FILTR-portfolio.html*/
