@@ -99,20 +99,22 @@ img {
     align-items: center;
 }
 
+/* .navigation-item {
+    margin-right: 50px;
+} */
+.navigation-list .navigation-item+.navigation-item {
+    margin-left: 50px;
+}
+
+/* .navigation-item:last-child {
+    margin-right: 0;
+} */
+
 .navigation-item-link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-
-.navigation-item {
-    margin-right: 50px;
-}
-
-.navigation-item:last-child {
-    margin-right: 0;
-}
-
 
 .navigation-item-link {
     color: #212121;
@@ -125,30 +127,41 @@ img {
 
 .navigation-item-link:hover,
 .navigation-item-link:focus,
-.auth-item:hover,
-.auth-item:focus,
+.navigation-item-link:active,
 .auth-item-mail:hover,
-.auth-item-mail:focus {
+.auth-item-mail:focus,
+.auth-item-tel:focus,
+.auth-item-tel:hover {
     color: var(--selectoin-color);
 }
+
+.navigation-item:active {
+    color: aqua;
+}
+
 
 .auth-list {
     display: flex;
     margin-left: auto;
 }
 
-.auth-item-mail {
-    margin-right: 50px;
+.auth-list .auth-item+.auth-item {
+    margin-left: 50px;
 }
 
-.auth-item,
+/* .auth-list .
+/* .auth-item-mail {
+    margin-right: 50px;
+} */
+
+.auth-item-tel,
 .auth-item-mail {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.auth-item,
+.auth-item-tel,
 .auth-item-mail {
     color: #757575;
     font-weight: 500;
@@ -278,7 +291,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .team-list {
@@ -293,14 +306,20 @@ img {
     margin-right: 0;
 }
 
+.team-name {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
 .team {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+
 }
 
 .team-item {
@@ -317,7 +336,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
-    padding-bottom: 30px;
+
 }
 
 /*#endregion TEAM*/
@@ -368,10 +387,10 @@ img {
 }
 
 .addres-text {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
-.footer-link:nth-last-child(n+1) {
+.footer-link:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -395,7 +414,6 @@ img {
 .filter-list {
     display: flex;
     justify-content: center;
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 
@@ -414,7 +432,7 @@ img {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    /* border-radius: 4px; */
 }
 
 .project-list {
@@ -442,6 +460,7 @@ img {
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
+    margin-bottom: 4px;
 }
 
 .name-list {
